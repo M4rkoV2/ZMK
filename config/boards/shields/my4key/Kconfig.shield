@@ -1,9 +1,11 @@
 config SHIELD_MY4KEY
-    bool "My 4-Key Shield"
+    bool "My 4 Key Shield"
     default y
 
 if SHIELD_MY4KEY
-    config ZMK_STUDIO_KEYMAP_PREVIEW
-        bool "Enable ZMK Studio keymap preview"
-        default y
+
+config ZMK_STUDIO_KEYMAP_PREVIEW
+    bool "Enable ZMK Studio keymap preview"
+    default y
+
 endif

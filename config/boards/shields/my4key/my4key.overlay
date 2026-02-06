@@ -1,6 +1,10 @@
 #include <dt-bindings/zmk/matrix_transform.h>
 
 / {
+    chosen {
+        zmk,kscan = &kscan0;
+    };
+
     kscan0: kscan {
         compatible = "zmk,kscan-gpio-direct";
 
@@ -11,14 +15,17 @@
             <&gpio0 24 (GPIO_PULL_UP | GPIO_ACTIVE_LOW)>;
     };
 
-    default_transform: keymap_transform {
-        compatible = "zmk,matrix-transform";
+    physical_layouts {
+        compatible = "zmk,physical-layouts";
 
-        columns = <4>;
-        rows = <1>;
+        my4_layout: layout_0 {
+            display-name = "My 4 Key Layout";
 
-        map = <
-            RC(0,0) RC(0,1) RC(0,2) RC(0,3)
-        >;
+            keys =
+                <&key_physical_attrs 0 0 100 100>,
+                <&key_physical_attrs 1 0 100 100>,
+                <&key_physical_attrs 2 0 100 100>,
+                <&key_physical_attrs 3 0 100 100>;
+        };
     };
 };
