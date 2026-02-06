@@ -3,7 +3,7 @@
         zmk,physical-layout = &layout_0;
     };
 
-    /* ---- GPIO KEYS ---- */
+    /* ===== GPIO KEYS ===== */
     keys {
         compatible = "gpio-keys";
 
@@ -24,10 +24,12 @@
         };
     };
 
-    /* ---- STUDIO PHYSICAL LAYOUT ---- */
+    /* ===== STUDIO LAYOUT ===== */
 
     key1_attr: key1_attr {
         compatible = "zmk,key-physical-attrs";
+        #key-cells = <0>;
+
         width = <100>;
         height = <100>;
         x = <0>;
@@ -37,6 +39,8 @@
 
     key2_attr: key2_attr {
         compatible = "zmk,key-physical-attrs";
+        #key-cells = <0>;
+
         width = <100>;
         height = <100>;
         x = <110>;
@@ -46,6 +50,8 @@
 
     key3_attr: key3_attr {
         compatible = "zmk,key-physical-attrs";
+        #key-cells = <0>;
+
         width = <100>;
         height = <100>;
         x = <220>;
@@ -55,6 +61,8 @@
 
     key4_attr: key4_attr {
         compatible = "zmk,key-physical-attrs";
+        #key-cells = <0>;
+
         width = <100>;
         height = <100>;
         x = <330>;
