@@ -1,2 +1,0 @@
-config BOARD_MY4KEY
-    bool "My 4 Key Board"
