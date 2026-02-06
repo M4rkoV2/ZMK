@@ -16,8 +16,4 @@
     };
 };
 
-/* --- ZMK Studio support --- */
 
-&studio {
-    status = "okay";
-};
