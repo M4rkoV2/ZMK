@@ -23,7 +23,6 @@
         };
     };
 
-    /* ===== ONLY SCHEMA NODE ===== */
     key_attrs: key_attrs {
         compatible = "zmk,key-physical-attrs";
         #key-cells = <7>;
@@ -34,6 +33,9 @@
 
         layout_0: layout_0 {
             compatible = "zmk,physical-layout";
+
+            ✅ ADD THIS LINE:
+            display-name = "My 4 Key Pad";
 
             /*  x   y   w   h   r  f  res  */
             keys =
