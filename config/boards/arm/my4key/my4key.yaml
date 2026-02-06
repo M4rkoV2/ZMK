@@ -1,0 +1,11 @@
+identifier: my4key
+name: My 4 Key BLE Remote
+type: board
+arch: arm
+toolchain:
+  - zephyr
+  - gnuarmemb
+supported:
+  - ble
+  - gpio
+  - usb_device
