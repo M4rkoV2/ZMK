@@ -28,7 +28,7 @@
 
     key1_attr: key1_attr {
         compatible = "zmk,key-physical-attrs";
-        #key-cells = <0>;
+        #key-cells = <7>;
 
         width = <100>;
         height = <100>;
@@ -39,7 +39,7 @@
 
     key2_attr: key2_attr {
         compatible = "zmk,key-physical-attrs";
-        #key-cells = <0>;
+        #key-cells = <7>;
 
         width = <100>;
         height = <100>;
@@ -50,7 +50,7 @@
 
     key3_attr: key3_attr {
         compatible = "zmk,key-physical-attrs";
-        #key-cells = <0>;
+        #key-cells = <7>;
 
         width = <100>;
         height = <100>;
@@ -61,7 +61,7 @@
 
     key4_attr: key4_attr {
         compatible = "zmk,key-physical-attrs";
-        #key-cells = <0>;
+        #key-cells = <7>;
 
         width = <100>;
         height = <100>;
