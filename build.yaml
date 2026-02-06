@@ -20,3 +20,5 @@
 ---
 include:
   - board: bdn9_rev2
+  - board: nrfmicro_11
+    shield: boardsource3x4
