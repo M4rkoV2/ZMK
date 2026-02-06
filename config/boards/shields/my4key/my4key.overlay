@@ -28,19 +28,37 @@
         #key-cells = <7>;
     };
 
+    default_transform: matrix_transform {
+    compatible = "zmk,matrix-transform";
+    columns = <1>;
+    rows = <4>;
+
+    map = <
+        RC(0,0)
+        RC(1,0)
+        RC(2,0)
+        RC(3,0)
+    >;
+    };
+
+
     physical_layouts {
         compatible = "zmk,physical-layouts";
 
         layout_0: layout_0 {
-            compatible = "zmk,physical-layout";
+    compatible = "zmk,physical-layout";
 
-            display-name = "My 4 Key Pad";
+    display-name = "My 4 Key Pad";
 
-            keys =
-                <&key_attrs 0   0   100 100 0 0 0>,
-                <&key_attrs 110 0   100 100 0 0 0>,
-                <&key_attrs 220 0   100 100 0 0 0>,
-                <&key_attrs 330 0   100 100 0 0 0>;
-        };
+    /* REQUIRED BY ZMK STUDIO */
+    transform = <&default_transform>;
+
+    keys =
+        <&key_attrs 0   0   100 100 0 0 0>,
+        <&key_attrs 110 0   100 100 0 0 0>,
+        <&key_attrs 220 0   100 100 0 0 0>,
+        <&key_attrs 330 0   100 100 0 0 0>;
+    };
+
     };
 };
