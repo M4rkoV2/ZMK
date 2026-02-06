@@ -24,3 +24,6 @@ include:
     shield: boardsource3x4
   - board: nrf52840_m2
     shield: m60
+  - board: my4key
+    shield: my4key
+
