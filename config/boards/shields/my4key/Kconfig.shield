@@ -5,6 +5,6 @@ config SHIELD_MY4KEY
       Enables support for the My 4-Key shield.
 
 if SHIELD_MY4KEY
-    # Required for Studio preview to work
-    select ZMK_STUDIO_KEYMAP_PREVIEW
+    config ZMK_STUDIO_KEYMAP_PREVIEW
+        bool y
 endif
