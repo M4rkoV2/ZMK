@@ -1,31 +1,29 @@
-#include <dt-bindings/zmk/matrix_transform.h>
-
 / {
     chosen {
-        zmk,kscan = &kscan0;
+        zmk,physical-layout = &layout_0;
     };
 
-    kscan0: kscan {
-        compatible = "zmk,kscan-gpio-direct";
+    key_physical_attrs: key_physical_attrs {
+        compatible = "zmk,key-physical-attrs";
 
-        input-gpios =
-            <&gpio0 17 (GPIO_PULL_UP | GPIO_ACTIVE_LOW)>,
-            <&gpio0 20 (GPIO_PULL_UP | GPIO_ACTIVE_LOW)>,
-            <&gpio0 22 (GPIO_PULL_UP | GPIO_ACTIVE_LOW)>,
-            <&gpio0 24 (GPIO_PULL_UP | GPIO_ACTIVE_LOW)>;
+        width = <100>;
+        height = <100>;
+        x = <0>;
+        y = <0>;
+        r = <0>;
     };
 
     physical_layouts {
         compatible = "zmk,physical-layouts";
 
-        my4_layout: layout_0 {
-            display-name = "My 4 Key Layout";
+        layout_0: layout_0 {
+            compatible = "zmk,physical-layout";
 
             keys =
-                <&key_physical_attrs 0 0 100 100>,
-                <&key_physical_attrs 1 0 100 100>,
-                <&key_physical_attrs 2 0 100 100>,
-                <&key_physical_attrs 3 0 100 100>;
+                <&key_physical_attrs>,
+                <&key_physical_attrs>,
+                <&key_physical_attrs>,
+                <&key_physical_attrs>;
         };
     };
 };
