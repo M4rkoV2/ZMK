@@ -4,8 +4,4 @@ config ZMK_KEYBOARD_NAME
     default "my4key"
  
 
-config ZMK_STUDIO_KEYMAP_PREVIEW
-    bool "Enable ZMK Studio keymap preview"
-    default y
-
 endif
