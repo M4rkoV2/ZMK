@@ -19,11 +19,11 @@
 #
 ---
 include:
-  - board: bdn9_rev2
-  - board: nrfmicro_11
-    shield: boardsource3x4
-  - board: nrf52840_m2
-    shield: m60
-  - board: nrf52840_m2
+ # - board: bdn9_rev2
+ # - board: nrfmicro_11
+ #   shield: boardsource3x4
+ # - board: nrf52840_m2
+ #   shield: m60
+  - board: nice_nano_v2
     shield: my4key
 
