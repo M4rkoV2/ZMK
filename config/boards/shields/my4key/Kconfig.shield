@@ -1,2 +1,3 @@
 config SHIELD_MY4KEY
+    bool "My 4 Key Shield"
     def_bool $(shields_list_contains,my4key)
