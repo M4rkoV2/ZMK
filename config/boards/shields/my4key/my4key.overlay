@@ -3,7 +3,6 @@
         zmk,physical-layout = &layout_0;
     };
 
-    /* ===== GPIO KEYS ===== */
     keys {
         compatible = "gpio-keys";
 
@@ -24,50 +23,10 @@
         };
     };
 
-    /* ===== STUDIO LAYOUT ===== */
-
-    key1_attr: key1_attr {
+    /* ===== ONLY SCHEMA NODE ===== */
+    key_attrs: key_attrs {
         compatible = "zmk,key-physical-attrs";
         #key-cells = <7>;
-
-        width = <100>;
-        height = <100>;
-        x = <0>;
-        y = <0>;
-        r = <0>;
-    };
-
-    key2_attr: key2_attr {
-        compatible = "zmk,key-physical-attrs";
-        #key-cells = <7>;
-
-        width = <100>;
-        height = <100>;
-        x = <110>;
-        y = <0>;
-        r = <0>;
-    };
-
-    key3_attr: key3_attr {
-        compatible = "zmk,key-physical-attrs";
-        #key-cells = <7>;
-
-        width = <100>;
-        height = <100>;
-        x = <220>;
-        y = <0>;
-        r = <0>;
-    };
-
-    key4_attr: key4_attr {
-        compatible = "zmk,key-physical-attrs";
-        #key-cells = <7>;
-
-        width = <100>;
-        height = <100>;
-        x = <330>;
-        y = <0>;
-        r = <0>;
     };
 
     physical_layouts {
@@ -76,11 +35,12 @@
         layout_0: layout_0 {
             compatible = "zmk,physical-layout";
 
+            /*  x   y   w   h   r  f  res  */
             keys =
-                <&key1_attr>,
-                <&key2_attr>,
-                <&key3_attr>,
-                <&key4_attr>;
+                <&key_attrs  0   0 100 100 0 0 0>,
+                <&key_attrs 110  0 100 100 0 0 0>,
+                <&key_attrs 220  0 100 100 0 0 0>,
+                <&key_attrs 330  0 100 100 0 0 0>;
         };
     };
 };
