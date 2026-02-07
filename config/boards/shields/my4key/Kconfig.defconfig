@@ -1,6 +1,0 @@
-if SHIELD_MY4KEY
-
-config ZMK_KEYBOARD_NAME
-    default "my4key"
- 
-endif
