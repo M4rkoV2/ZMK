@@ -13,7 +13,7 @@
         
         combo_activate_layer_3 {
             timeout-ms = <50>;
-            key-positions = <0 2>;
+            key-positions = <1 0>;
             bindings = <&mo 3>;
         };
     };
@@ -22,25 +22,18 @@
         compatible = "zmk,keymap";
             
         base_layer {
-            display-name = "base_layer";
+            display-name = "Base Layer";
             bindings = <
                 &mo 4                          
-                &studio_unlock                                
+                &mo 1                                
                 &kp DOT                                  
                 &kp COMMA 
             >;
         }; 
         
-        macro_layer_1 {
-            display-name = "macro_layer_1";
-            
-            bindings = <
-                &kp N2                       
-                &none                                   
-                &kp LC(LA(LS(F7)))  
-                &kp LC(LA(LS(F10))) 
-            >;
-        }; 
+        extra_layer_1 {
+            status = "reserved";
+        };
         
         extra_layer_2 {
             status = "reserved";
@@ -51,23 +44,15 @@
         };
         
         config_layer_4 {
-            display-name = "config_layer_4";
+            display-name = "Config";
             
             bindings = <
-                &kp N5                 
+                &none                  
                 &bt BT_CLR                                  
                 &studio_unlock        
                 &bootloader    
             >;
         }; 
-        
-        extra_layer_5 {
-            status = "reserved";
-        };
-        
-        extra_layer_6 {
-            status = "reserved";
-        };
 
     };
 };
