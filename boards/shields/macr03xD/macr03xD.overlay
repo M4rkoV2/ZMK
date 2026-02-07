@@ -30,7 +30,7 @@
     };
     
     physical_layout0: physical_layout_0 { 
-        compatible = "zmk,physical-layout";,.,,,
+        compatible = "zmk,physical-layout";
         display-name = "macr03xD";
         kscan = <&default_kscan>; // Label of the kscan node, optional if all layouts use the same
         transform = <&default_transform>; // Label of the matrix transform for this layout
