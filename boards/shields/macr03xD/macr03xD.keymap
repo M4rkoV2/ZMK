@@ -25,7 +25,7 @@
             display-name = "base_layer";
             bindings = <
                 &mo 4                          
-                &mo 1                                 
+                &studio_unlock                                
                 &kp DOT                                  
                 &kp COMMA 
             >;
