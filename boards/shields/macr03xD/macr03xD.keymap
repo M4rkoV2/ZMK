@@ -25,7 +25,7 @@
             display-name = "base_layer";
             bindings = <
                 &mo 4                          
-                &mo 2                                 
+                &mo 1                                 
                 &kp DOT                                  
                 &kp COMMA 
             >;
@@ -42,27 +42,13 @@
             >;
         }; 
         
-        macro_layer_2 {
-            display-name = "macro_layer_2";
-          
-            bindings = <
-                &kp N3                      
-                &none                                    
-                &kp LC(LA(LS(N1)))  
-                &kp LC(LA(LS(N4)))   
-            >;
-        }; 
+        extra_layer_2 {
+            status = "reserved";
+        };
         
-        macro_layer_3 {
-            display-name = "macro_layer_3";
-          
-            bindings = <
-                &kp N4                   
-                &none                                    
-                &kp LC(LA(LS(A)))   
-                &kp LC(LA(LS(D)))    
-            >;
-        }; 
+        extra_layer_3 {
+            status = "reserved";
+        };
         
         config_layer_4 {
             display-name = "config_layer_4";

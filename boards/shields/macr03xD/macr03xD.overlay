@@ -30,7 +30,7 @@
     };
     
     physical_layout0: physical_layout_0 { 
-        compatible = "zmk,physical-layout";
+        compatible = "zmk,physical-layout";,.,,,
         display-name = "macr03xD";
         kscan = <&default_kscan>; // Label of the kscan node, optional if all layouts use the same
         transform = <&default_transform>; // Label of the matrix transform for this layout
@@ -53,9 +53,9 @@
         transform = <&default_transform>; // Label of the matrix transform for this layout
         keys  //                     w   h     x    y     rot    rx    ry
             = <&key_physical_attrs 100 100     0   0       0     0     0> // Row 1
-            , <&key_physical_attrs 100 100     100 100       0     0     0> // Row 2
-            , <&key_physical_attrs 100 100     0 200       0     0     0> // Row 3
-            , <&key_physical_attrs 100 100     100 200       0     0     0> // Row 4
+            , <&key_physical_attrs 100 100     100 0       0     0     0> // Row 2
+            , <&key_physical_attrs 100 100     0 100       0     0     0> // Row 3
+            , <&key_physical_attrs 100 100     100 100       0     0     0> // Row 4
             ;
     };
 };
