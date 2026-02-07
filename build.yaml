@@ -24,6 +24,10 @@ include:
  #   shield: boardsource3x4
  # - board: nrf52840_m2
  #   shield: m60
-  - board: seeeduino_xiao_ble
+  #- board: seeeduino_xiao_ble
+  #  shield: my4key
+  - board: nrf52840_m2
+    shield: my4key
+  - board: nrfmicro_11
     shield: my4key
 
