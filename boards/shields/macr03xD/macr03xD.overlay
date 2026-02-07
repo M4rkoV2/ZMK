@@ -13,7 +13,7 @@
                     <&pro_micro 16 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)>,
                     <&pro_micro 10 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)>;
 
-        col-gpios = <&pro_micro 9 GPIO_ACTIVE_HIGH>;
+        col-gpios = <&pro_micro 18 GPIO_ACTIVE_HIGH>;
     };
     
     default_transform: matrix_transform {
@@ -53,9 +53,9 @@
         transform = <&default_transform>; // Label of the matrix transform for this layout
         keys  //                     w   h     x    y     rot    rx    ry
             = <&key_physical_attrs 100 100     0   0       0     0     0> // Row 1
-            , <&key_physical_attrs 100 100     0 100       0     0     0> // Row 2
+            , <&key_physical_attrs 100 100     100 100       0     0     0> // Row 2
             , <&key_physical_attrs 100 100     0 200       0     0     0> // Row 3
-            , <&key_physical_attrs 100 100     0 300       0     0     0> // Row 4
+            , <&key_physical_attrs 100 100     100 200       0     0     0> // Row 4
             ;
     };
 };

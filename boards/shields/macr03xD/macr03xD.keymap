@@ -24,10 +24,10 @@
         base_layer {
             display-name = "base_layer";
             bindings = <
-                &kp N1                         
-                &mo 1                                 
-                &bt BT_CLR                                  
-                &studio_unlock  
+                &mo 4                          
+                &mo 2                                 
+                &kp DOT                                  
+                &kp COMMA 
             >;
         }; 
         
