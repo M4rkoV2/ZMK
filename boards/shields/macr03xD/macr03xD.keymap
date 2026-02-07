@@ -11,10 +11,20 @@
     combos {
         compatible = "zmk,combos";
         
-        combo_activate_layer_3 {
+        combo_stu_unlock {
             timeout-ms = <60>;
             key-positions = <0 1>;
             bindings = <&studio_unlock >;
+        };
+        combo_boot {
+            timeout-ms = <60>;
+            key-positions = <0 1 2 3>;
+            bindings = <&bootloader >;
+        };
+        combo_cl {
+            timeout-ms = <60>;
+            key-positions = <1 2 3>;
+            bindings = <&bt BT_CLR >;
         };
     };
     
@@ -24,17 +34,23 @@
         base_layer {
             display-name = "Base Layer";
             bindings = <
-                &mo 4                          
+                &kp Z                          
                 &mo 1                                
                 &kp DOT                                  
                 &kp COMMA 
             >;
         }; 
         
-        extra_layer_1 {
-            status = "reserved";
-        };
-        
+        macro_layer_1 {
+            display-name = "Layer 1";
+            bindings = <
+                &none                        
+                &none                                   
+                &kp LC(LA(LS(F7)))   
+                &kp LC(LA(LS(F10)))  
+            >;
+        }; 
+
         extra_layer_2 {
             status = "reserved";
         };
