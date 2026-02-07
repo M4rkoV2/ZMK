@@ -24,7 +24,7 @@
         base_layer {
             display-name = "base_layer";
             bindings = <
-                &mo 2                         
+                &kp N1                         
                 &mo 1                                 
                 &bt BT_CLR                                  
                 &studio_unlock  
@@ -35,7 +35,7 @@
             display-name = "macro_layer_1";
             
             bindings = <
-                &none                       
+                &kp N2                       
                 &none                                   
                 &kp LC(LA(LS(F7)))  
                 &kp LC(LA(LS(F10))) 
@@ -46,7 +46,7 @@
             display-name = "macro_layer_2";
           
             bindings = <
-                &none                      
+                &kp N3                      
                 &none                                    
                 &kp LC(LA(LS(N1)))  
                 &kp LC(LA(LS(N4)))   
@@ -57,7 +57,7 @@
             display-name = "macro_layer_3";
           
             bindings = <
-                &none                   
+                &kp N4                   
                 &none                                    
                 &kp LC(LA(LS(A)))   
                 &kp LC(LA(LS(D)))    
@@ -68,7 +68,7 @@
             display-name = "config_layer_4";
             
             bindings = <
-                &none                  
+                &kp N5                 
                 &bt BT_CLR                                  
                 &studio_unlock        
                 &bootloader    
