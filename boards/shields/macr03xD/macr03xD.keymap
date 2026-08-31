@@ -19,7 +19,7 @@
         combo_boot {
             timeout-ms = <60>;
             key-positions = <0 1 2 3>;
-            bindings = <&bootloader >;
+            bindings = <&studio_unlock >;
         };
         combo_cl {
             timeout-ms = <60>;
