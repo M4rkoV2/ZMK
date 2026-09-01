@@ -36,8 +36,8 @@
             display-name = "Base Layer";
             bindings = <
                 /* Map Arrow Up / Down to scroll TikTok */
-                &msc MOVE_Y(10)   /* Scroll Up / Previous Video */
-                &msc MOVE_Y(-10)  /* Scroll Down / Next Video */                                
+                &msc MOVE_Y(90)   /* Scroll Up / Previous Video */
+                &msc MOVE_Y(-90)  /* Scroll Down / Next Video */                                
                 &kp DOT                                  
                 &kp COMMA 
             >;
