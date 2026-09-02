@@ -1,7 +1,8 @@
 #include <dt-bindings/zmk/matrix_transform.h>
+#include <dt-bindings/zmk/gpio.h>
 #include <physical_layouts.dtsi>
 
-/ {  
+/ {
     default_kscan: kscan {
         compatible = "zmk,kscan-gpio-matrix";
         label = "default_kscan";
@@ -21,14 +22,14 @@
         columns = <1>;
 
         map = <
-            RC(0,0)   
-            RC(1,0)         
-            RC(2,0) 
-            RC(3,0) 
+            RC(0,0)
+            RC(1,0)
+            RC(2,0)
+            RC(3,0)
         >;
     };
 
-    physical_layout0: physical_layout_0 { 
+    physical_layout0: physical_layout_0 {
         compatible = "zmk,physical-layout";
         display-name = "macr03xD";
         kscan = <&default_kscan>;
