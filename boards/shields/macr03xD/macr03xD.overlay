@@ -34,18 +34,17 @@
         display-name = "macr03xD";
         kscan = <&default_kscan>;
         transform = <&default_transform>;
-        keys  //               w   h     x    y     rot    rx    ry
-            = <&key_physical_attrs 100 100     0    0       0     0     0> // Row 1
-            , <&key_physical_attrs 100 100   100    0       0     0     0> // Row 2
-            , <&key_physical_attrs 100 100     0  100       0     0     0> // Row 3
-            , <&key_physical_attrs 100 100   100  100       0     0     0> // Row 4
+        keys
+            = <&key_physical_attrs 100 100   0   0 0 0 0>
+            , <&key_physical_attrs 100 100 100   0 0 0 0>
+            , <&key_physical_attrs 100 100   0 100 0 0 0>
+            , <&key_physical_attrs 100 100 100 100 0 0 0>
             ;
     };
 
     vbatt: battery-divider {
         compatible = "zmk,battery-voltage-divider";
-        label = "BATTERY";
-        io-channels = <&adc 6>; /* Pin P0.30 / AIN6 */
+        io-channels = <&adc 6>;
         output-ohms = <100000>;
         full-ohms = <(100000 + 100000)>;
         power-gpios = <&gpio0 13 (GPIO_ACTIVE_HIGH | GPIO_PULL_UP)>;
