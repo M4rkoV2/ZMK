@@ -59,3 +59,22 @@
             ;
     };
 };
+
+/ {
+    vbatt: battery-divider {
+        compatible = "zmk,battery-voltage-divider";
+        label = "BATTERY";
+        io-channels = <&adc 6>; /* Pin P0.30 / AIN6 */
+        output-ohms = <100000>;
+        full-ohms = <(100000 + 100000)>;
+        power-gpios = <&gpio0 13 (GPIO_ACTIVE_HIGH | GPIO_PULL_UP)>;
+    };
+
+    chosen {
+        zmk,battery = &vbatt;
+    };
+};
+
+&adc {
+    status = "okay";
+};
