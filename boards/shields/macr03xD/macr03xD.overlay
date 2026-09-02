@@ -1,5 +1,6 @@
 #include <dt-bindings/zmk/matrix_transform.h>
 #include <dt-bindings/zmk/gpio.h>
+#include <dt-bindings/zmk/adc.h>
 #include <physical_layouts.dtsi>
 
 / {
@@ -47,7 +48,6 @@
         io-channels = <&adc 6>;
         output-ohms = <100000>;
         full-ohms = <(100000 + 100000)>;
-        power-gpios = <&gpio0 13 (GPIO_ACTIVE_HIGH | GPIO_PULL_UP)>;
     };
 
     chosen {
